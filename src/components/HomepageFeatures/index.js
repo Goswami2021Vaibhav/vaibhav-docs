@@ -15,7 +15,7 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Knowledge Base',
+    title: 'Dev Notes',
     to: '/docs/intro',
     description: (
       <>

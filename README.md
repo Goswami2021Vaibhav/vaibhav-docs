@@ -1,22 +1,26 @@
-# Website
+# Vaibhav Docs
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+My personal interview-prep and developer-notes site, built with [Docusaurus](https://docusaurus.io/).
 
-## Installation
+Live at: **https://Goswami2021Vaibhav.github.io/vaibhav-docs/**
 
-```bash
-npm install
-```
+## What's in here
 
-**Note**: feel free to use the package manager of your choice.
+Two sections:
+
+- **Interview Prep** (`docs-interview/`) — question banks by subject (JavaScript, more subjects to come), one topic per page, questions in a collapsible self-test format: read the question, try to answer it out loud, then reveal the answer to check yourself. Curated to the highest-value questions per topic, not padded out for volume.
+- **Dev Notes** (`docs/`) — quick-reference commands and runbooks for tools I use day-to-day (currently Git; Docker/Linux/CI-CD to come as notes get written).
+
+Both are searchable from the navbar (self-hosted local search, no external service).
 
 ## Local Development
 
 ```bash
+npm install
 npm run start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+Starts a local dev server with live reload.
 
 ## Build
 
@@ -24,20 +28,21 @@ This command starts a local development server and opens up a browser window. Mo
 npm run build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+Generates static output into `build/`.
 
 ## Deployment
 
-Using SSH:
+Deployed to GitHub Pages.
 
 ```bash
 USE_SSH=true npm run deploy
+# or, without SSH:
+GIT_USER=<your-github-username> npm run deploy
 ```
 
-Not using SSH:
+This builds the site and pushes it to the `gh-pages` branch.
 
-```bash
-GIT_USER=<Your GitHub username> npm run deploy
-```
+## Adding content
 
-If you are using GitHub Pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+- **Interview Prep questions**: each topic file lives in `docs-interview/<subject>/`, capped at ~15 questions per topic, flat (no difficulty grouping), each in its own `<details>` accordion.
+- **Dev Notes pages**: plain Markdown under `docs/<tool>/`, copy-paste-first style with a troubleshooting section at the end.

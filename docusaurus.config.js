@@ -76,7 +76,10 @@ const config = {
   themes: [
     [
       '@easyops-cn/docusaurus-search-local',
-      /** @type {import('@easyops-cn/docusaurus-search-local').PluginOptions} */
+      // Note: no @type annotation here — the plugin's exported PluginOptions
+      // type isn't structurally compatible with Docusaurus's expected
+      // DeepPartial<PluginOptions> (missing string index signature), which
+      // causes a false-positive ts(2322) error under `@ts-check`.
       ({
         hashed: true,
         language: ['en'],
@@ -113,7 +116,7 @@ const config = {
             docsPluginId: 'default',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Knowledge Base',
+            label: 'Dev Notes',
           },
           {
             href: 'https://github.com/Goswami2021Vaibhav/vaibhav-docs',

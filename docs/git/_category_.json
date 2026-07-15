@@ -1,0 +1,8 @@
+{
+  "label": "Git",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Git commands and workflows I use daily, and the ones I only need once a year but never remember."
+  }
+}
