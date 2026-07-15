@@ -11,7 +11,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Vaibhav Docs',
-  tagline: 'Personal developer notes and command references',
+  tagline: 'Interview prep and developer notes I actually use',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -50,10 +50,40 @@ const config = {
           editUrl:
             'https://github.com/Goswami2021Vaibhav/vaibhav-docs/tree/main/',
         },
-        blog: false, // set to a config object here if you want to use the blog later
+        blog: false, // docs-only site, no blog
         theme: {
           customCss: './src/css/custom.css',
         },
+      }),
+    ],
+  ],
+
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      ({
+        id: 'interview',
+        path: 'docs-interview',
+        routeBasePath: 'interview',
+        sidebarPath: './sidebarsInterview.js',
+        editUrl:
+          'https://github.com/Goswami2021Vaibhav/vaibhav-docs/tree/main/',
+      }),
+    ],
+  ],
+
+  themes: [
+    [
+      '@easyops-cn/docusaurus-search-local',
+      /** @type {import('@easyops-cn/docusaurus-search-local').PluginOptions} */
+      ({
+        hashed: true,
+        language: ['en'],
+        docsRouteBasePath: ['docs', 'interview'],
+        indexBlog: false,
+        indexPages: false,
+        highlightSearchTermsOnTargetPage: true,
       }),
     ],
   ],
@@ -73,9 +103,17 @@ const config = {
         items: [
           {
             type: 'docSidebar',
+            docsPluginId: 'interview',
+            sidebarId: 'interviewSidebar',
+            position: 'left',
+            label: 'Interview Prep',
+          },
+          {
+            type: 'docSidebar',
+            docsPluginId: 'default',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Docs',
+            label: 'Knowledge Base',
           },
           {
             href: 'https://github.com/Goswami2021Vaibhav/vaibhav-docs',
@@ -86,30 +124,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Docker',
-                to: '/docs/docker/daily-commands',
-              },
-              {
-                label: 'Linux',
-                to: '/docs/linux/daily-commands',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/Goswami2021Vaibhav/vaibhav-docs',
-              },
-            ],
-          },
-        ],
+       
         copyright: `Copyright © ${new Date().getFullYear()} Vaibhav Goswami. Built with Docusaurus.`,
       },
       prism: {

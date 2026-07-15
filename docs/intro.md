@@ -5,16 +5,15 @@ sidebar_position: 1
 
 # Vaibhav Docs
 
-Personal developer notes and quick-reference commands — Docker, Linux, Git, CI/CD, and more, growing as I learn.
+Personal developer notes and quick-reference commands — Git, Docker, Linux, CI/CD, and more, growing as I learn.
 
 This isn't a tutorial series. It's a **quick-reference vault**: copy-paste commands, working config templates, and troubleshooting notes for the tools I actually use day-to-day.
 
 ## What's Here
 
-- **[Docker](/docs/docker/daily-commands)** — daily commands, Dockerfile reference, dockerizing Node/React/MERN apps
-- **[Linux](/docs/linux/daily-commands)** — daily commands, SSH & remote access
+- **[Git](/docs/git/daily-commands)** — initial setup, branching, undoing mistakes, and the commands I'd otherwise re-Google every time
 
-More sections (CI/CD, Git, MongoDB) will be added as notes get written.
+More sections (Docker, Linux, CI/CD, MongoDB) will be added as notes get written.
 
 ## Why This Exists
 
