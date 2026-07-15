@@ -16,9 +16,44 @@
   }
 }
 
+.heroDescription {
+  font-size: 1.1rem;
+  opacity: 0.8;
+  max-width: 640px;
+  margin: -0.5rem auto 2rem;
+}
+
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 1rem;
+}
+
+/* button--primary shares the hero's own background color, so it's
+   invisible against it without an explicit override here. Uses the same
+   ink-navy as the logo/favicon, which contrasts against amber in both
+   light and dark mode. */
+.buttons :global(.button--primary) {
+  background-color: #14151b;
+  border-color: #14151b;
+  color: #f0c78f;
+}
+
+.buttons :global(.button--primary):hover {
+  background-color: #21222b;
+  border-color: #21222b;
+  color: #f0c78f;
+}
+
+@media screen and (max-width: 480px) {
+  .buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .buttons :global(.button) {
+    width: 100%;
+  }
 }

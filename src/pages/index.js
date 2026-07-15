@@ -16,6 +16,10 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className={styles.heroDescription}>
+          Interview prep, deployment guides, commands, architecture, and
+          developer notes.
+        </p>
         <div className={styles.buttons}>
           <Link
             className="button button--primary button--lg"
