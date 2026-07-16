@@ -1,0 +1,8 @@
+{
+  "label": "DevOps",
+  "position": 11,
+  "link": {
+    "type": "generated-index",
+    "description": "Git, Docker, Docker Compose, and CI/CD \u2014 the tooling questions that come up around deployment."
+  }
+}
