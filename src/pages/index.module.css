@@ -33,18 +33,18 @@
 
 /* button--primary shares the hero's own background color, so it's
    invisible against it without an explicit override here. Uses the same
-   ink-navy as the logo/favicon, which contrasts against amber in both
-   light and dark mode. */
+   ink-navy as the logo/favicon, which contrasts against the accent blue in
+   both light and dark mode. */
 .buttons :global(.button--primary) {
   background-color: #14151b;
   border-color: #14151b;
-  color: #f0c78f;
+  color: #9dcaf4;
 }
 
 .buttons :global(.button--primary):hover {
   background-color: #21222b;
   border-color: #21222b;
-  color: #f0c78f;
+  color: #9dcaf4;
 }
 
 @media screen and (max-width: 480px) {

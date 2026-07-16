@@ -15,29 +15,31 @@
     url('../fonts/open-sans-latin-var.woff2') format('woff2');
 }
 
+ 
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-font-family-base: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Noto Sans, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
-  --ifm-color-primary: #a5691f;
-  --ifm-color-primary-dark: #955f1c;
-  --ifm-color-primary-darker: #8c591a;
-  --ifm-color-primary-darkest: #734915;
-  --ifm-color-primary-light: #b57323;
-  --ifm-color-primary-lighter: #bd7a2d;
-  --ifm-color-primary-lightest: #d29249;
+  --ifm-color-primary: #0a66c2;
+  --ifm-color-primary-dark: #0958ab;
+  --ifm-color-primary-darker: #08529f;
+  --ifm-color-primary-darkest: #064383;
+  --ifm-color-primary-light: #0b74d9;
+  --ifm-color-primary-lighter: #1580e0;
+  --ifm-color-primary-lightest: #3d99e8;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #e3a54c;
-  --ifm-color-primary-dark: #de9a37;
-  --ifm-color-primary-darker: #db922b;
-  --ifm-color-primary-darkest: #b97717;
-  --ifm-color-primary-light: #e8b061;
-  --ifm-color-primary-lighter: #eab66d;
-  --ifm-color-primary-lightest: #f0c78f;
+  --ifm-color-primary: #4a9eea;
+  --ifm-color-primary-dark: #338fe6;
+  --ifm-color-primary-darker: #2286e4;
+  --ifm-color-primary-darkest: #1569b8;
+  --ifm-color-primary-light: #61aded;
+  --ifm-color-primary-lighter: #71b4ef;
+  --ifm-color-primary-lightest: #9dcaf4;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
