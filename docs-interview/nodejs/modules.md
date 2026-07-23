@@ -368,7 +368,7 @@ Everything covered so far in this chapter — module boundaries, the export mech
 
 ### 🗂️ Organize by Feature, Not Just by Technical Layer
 
-Grouping code by feature or domain — a `users/` folder containing that feature's routes, controllers, services, and models together — keeps related code physically close, rather than scattering a single feature's logic across separate `controllers/`, `services/`, and `models/` folders mixed in with every other feature. This makes a large codebase considerably easier to navigate as it grows, a theme the Node.js Best Practices chapter later in this guide returns to in more depth.
+Grouping code by feature or domain — a `users/` folder containing that feature's routes, controllers, services, and models together — keeps related code physically close, rather than scattering a single feature's logic across separate `controllers/`, `services/`, and `models/` folders mixed in with every other feature. This makes a large codebase considerably easier to navigate as it grows.
 
 ### 🚧 Define Clear Module Boundaries
 
